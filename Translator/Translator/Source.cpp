@@ -59,12 +59,54 @@ public:
 	}
 };
 class HashTable {
+private:
+	Node** table;
+public:
+	int tableSize = 127;
+	HashTable() {
+		table = new Node * [tableSize];
+		for (int i = 0; i < tableSize; i++)
+		{
+			table[i] = NULL;
+		}
+	}
+	int HashFunc(string key) {
+		int sum = 0;
+		for (int i = 0; i < key.size(); i++)
+		{
+			sum += key[i];
+		}
+		return sum % key.size();
+	}
+	void insert(string key, string value) {
+		Pair aa;
+		aa.set_Key_Value(key, value);
+		int hash_val = HashFunc(key);
+		Node* prev = NULL;
+		Node* entry = table[hash_val];
+		while (entry != NULL) {
+			prev = entry;
+			entry = entry->next;
+		}
+		if (entry == NULL) {
+			entry = new Node(aa);
+			if (prev == NULL) {
+				table[hash_val] = entry;
+			}
+			else {
+				prev->next = entry;
+			}
 
+		}
+		else {
+			entry->data.Value;
+		}
+	}
 };
 
 
 int main() {
-	LinkedList list;
+	/*LinkedList list;
 	Pair a;
 	a.set_Key_Value("one", "word1");
 	Pair b;
@@ -73,7 +115,7 @@ int main() {
 	a.set_Key_Value("three", "word3");
 	list.addAtEnd(a);
 	list.addAtEnd(b);
-	list.addAtEnd(c);
+	list.addAtEnd(c);*/
 	
 	
 }
