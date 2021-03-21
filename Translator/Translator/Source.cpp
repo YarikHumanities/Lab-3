@@ -102,20 +102,29 @@ public:
 			entry->data.Value;
 		}
 	}
+	void Search(string key)
+	{
+		bool flag = false;
+		int hash_val = HashFunc(key);
+		Node* entry = table[hash_val];
+		while (entry != NULL)
+		{
+			if (entry->data.Key == key)
+			{
+				cout << entry->data.Value << " ";
+				flag = true;
+			}
+			entry = entry->next;
+		}
+		if (!flag)
+		{
+			cout << "Not"<<endl;
+		}
+	}
 };
 
 
-int main() {
-	/*LinkedList list;
-	Pair a;
-	a.set_Key_Value("one", "word1");
-	Pair b;
-	a.set_Key_Value("two", "word2");
-	Pair c;
-	a.set_Key_Value("three", "word3");
-	list.addAtEnd(a);
-	list.addAtEnd(b);
-	list.addAtEnd(c);*/
-	
-	
+int main() 
+{
+
 }
