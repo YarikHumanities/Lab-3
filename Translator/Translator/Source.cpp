@@ -1,4 +1,3 @@
-
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -58,6 +57,7 @@ public:
 		head = NULL;
 	}
 };
+//Hash table
 class HashTable {
 private:
 	Node** table;
@@ -126,5 +126,34 @@ public:
 
 int main() 
 {
+	ifstream inFile;
+	string path = "C:/Users/User/coding/Labs 1.2/Lab-3/dictionaty.txt";
+	string str;
+	string key;
+	inFile.open(path);
+	if (!inFile.is_open()) {
+		std::cout << "Cannot open the dictionary" << std::endl;
+	}
+	else
+	{
+		std::cout << "Dictionary opened" << std::endl;
+		while (!inFile.eof()) {
+			str = "";
+			getline(inFile, str);
+			if (str.size() > 0) {
+				for (int i = 0; i < str.size(); i++)
+				{
+					if (str[i] > 'A' and str[i] < 'Z') {
+						key += str[i];
+					}
+					else {
+						break;
+					}
+				}
+			}
+
+		}
+
+	}
 
 }
