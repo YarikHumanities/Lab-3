@@ -52,21 +52,15 @@ public:
 		}
 		return ptr;
 	}
-	/*void display() {
-		Node* pointer = head;
-		while (pointer != NULL) {
-			
-			cout << pointer->data << "->";
-			pointer = pointer->next;
-		}
-	}*/
 
 
 	LinkedList() {
 		head = NULL;
 	}
 };
+class HashTable {
 
+};
 
 
 int main() {
@@ -80,5 +74,6 @@ int main() {
 	list.addAtEnd(a);
 	list.addAtEnd(b);
 	list.addAtEnd(c);
+	
 	
 }
