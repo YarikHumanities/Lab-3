@@ -160,9 +160,39 @@ int main()
 		}
 
 	}
-	string word;
+	string str1;
 	cout << "Enter a word: ";
-	getline(cin, word);
+	getline(cin, str1);
+	//=========================================================
+	int start = 0, end = 0;
 
-	dictionary.Search(word);
+	while (end < str1.size())
+	{
+		start = end;
+		while (start < str1.size() && str1[start] == ' ')
+		{
+			++start;
+		}
+		end = start;
+		while (end < str1.size() && str1[end] != ' ')
+		{
+			++end;
+		}
+		string word = string(str1, start, end - start);
+		string right_word;
+		for (int i = 0; i < word.size(); i++)
+		{
+			if (word[i] >= 'A' and word[i] <= 'Z') {
+				right_word += word[i];
+			}
+			else {
+				right_word += (word[i] - 32);
+			}
+			
+		}
+		dictionary.Search(right_word);
+		
+	}
+		//===================================================
+	
 }
