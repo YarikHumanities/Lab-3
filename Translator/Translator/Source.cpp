@@ -111,14 +111,14 @@ public:
 		{
 			if (entry->data.Key == key)
 			{
-				cout << entry->data.Value << " ";
+				cout <<key<<": "<< entry->data.Value <<endl;
 				flag = true;
 			}
 			entry = entry->next;
 		}
 		if (!flag)
 		{
-			cout << "Not"<<endl;
+			cout <<key<<":"<<"There isn't such a word in the dictionary"<<endl;
 		}
 	}
 };
@@ -127,9 +127,12 @@ public:
 int main() 
 {
 	ifstream inFile;
-	string path = "C:/Users/User/coding/Labs 1.2/Lab-3/dictionaty.txt";
+	string path = "C:/Users/User/coding/Labs 1.2/Lab-3/Translator/TextFile1.txt";
 	string str;
+	HashTable dictionary;
 	string key;
+	string value;
+	string defn = "Defn:";
 	inFile.open(path);
 	if (!inFile.is_open()) {
 		std::cout << "Cannot open the dictionary" << std::endl;
@@ -139,21 +142,27 @@ int main()
 		std::cout << "Dictionary opened" << std::endl;
 		while (!inFile.eof()) {
 			str = "";
+			key = "";
+			value = "";
+
 			getline(inFile, str);
 			if (str.size() > 0) {
-				for (int i = 0; i < str.size(); i++)
-				{
-					if (str[i] > 'A' and str[i] < 'Z') {
-						key += str[i];
-					}
-					else {
-						break;
-					}
-				}
+				string key_temp = string(str, 0, str.find(';'));
+				key = key_temp;
+				
+				string value_temp = str.substr(str.find("Defn:")+5);
+				value = value_temp;
+				dictionary.insert(key, value);
+				key_temp = "";
+				value_temp = "";
 			}
 
 		}
 
 	}
+	string word;
+	cout << "Enter a word: ";
+	getline(cin, word);
 
+	dictionary.Search(word);
 }
