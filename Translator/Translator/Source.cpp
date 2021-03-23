@@ -159,7 +159,7 @@ public:
 int main()
 {
     ifstream inFile;
-    string path = "G:/lab rep/Lab-3/Translator/TextFile1.txt";
+    string path = "C:/Users/User/coding/Labs 1.2/Lab-3/Translator/TextFile1.txt";
     string str;
     HashTable dictionary;
     string key;

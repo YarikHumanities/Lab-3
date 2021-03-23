@@ -1,8 +1,8 @@
 ﻿  Source.cpp
-G:\lab rep\Lab-3\Translator\Translator\Source.cpp(63,21): warning C4305: инициализация: усечение из "double" в "float"
-G:\lab rep\Lab-3\Translator\Translator\Source.cpp(75,27): warning C4018: <: несоответствие типов со знаком и без знака
-G:\lab rep\Lab-3\Translator\Translator\Source.cpp(200,20): warning C4018: <: несоответствие типов со знаком и без знака
-G:\lab rep\Lab-3\Translator\Translator\Source.cpp(203,26): warning C4018: <: несоответствие типов со знаком и без знака
-G:\lab rep\Lab-3\Translator\Translator\Source.cpp(208,24): warning C4018: <: несоответствие типов со знаком и без знака
-G:\lab rep\Lab-3\Translator\Translator\Source.cpp(214,31): warning C4018: <: несоответствие типов со знаком и без знака
-  Translator.vcxproj -> G:\lab rep\Lab-3\Translator\Debug\Translator.exe
+C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Translator\Source.cpp(63,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Translator\Source.cpp(75,27): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Translator\Source.cpp(200,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Translator\Source.cpp(203,26): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Translator\Source.cpp(208,24): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Translator\Source.cpp(214,31): warning C4018: '<': signed/unsigned mismatch
+  Translator.vcxproj -> C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Debug\Translator.exe
