@@ -195,7 +195,7 @@ int main()
         if (str1 == "I want to exit") {
             break;
         }
-        //=========================================================
+     
         int start = 0, end = 0;
         while (end < str1.size())
         {
@@ -223,5 +223,5 @@ int main()
             dictionary.Search(right_word);
         }
     }
-    //===================================================
+    
 }
