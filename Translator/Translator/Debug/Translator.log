@@ -1,3 +1,7 @@
 ﻿  Source.cpp
 C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Translator\Source.cpp(75,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Translator\Source.cpp(174,14): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Translator\Source.cpp(177,17): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Translator\Source.cpp(182,15): warning C4018: '<': signed/unsigned mismatch
+C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Translator\Source.cpp(188,22): warning C4018: '<': signed/unsigned mismatch
   Translator.vcxproj -> C:\Users\User\coding\Labs 1.2\Lab-3\Translator\Debug\Translator.exe
