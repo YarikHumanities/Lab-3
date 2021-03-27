@@ -158,8 +158,26 @@ public:
 };
 int main()
 {
+    /*int n = 2;
+    HashTable dictionary;
+    string key;
+    string value;
+    dictionary.insert("ac", "Hello");
+    dictionary.insert("ac", "Bye");
+    dictionary.insert("ca", "Wrong");
+    /*for (int i = 0; i < n; i++)
+    {
+        cout << "Enter key: ";
+        getline(cin, key);
+        cout << "Enter word: ";
+        getline(cin, value);
+        dictionary.insert(key, value);
+    }*/
+    
+   
+    //dictionary.Search("ac");
     ifstream inFile;
-    string path = "C:/Users/User/coding/Labs 1.2/Lab-3/Translator/TextFile1.txt";
+    string path = "C:/Users/User/coding/Labs 1.2/Lab-3/Translator/dict_temp.txt";
     string str;
     HashTable dictionary;
     string key;
